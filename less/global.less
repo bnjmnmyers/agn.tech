@@ -1,0 +1,89 @@
+/* CSS Document */
+@import url(reset.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+/***********************************
+             CONSTANTS
+***********************************/
+@bottom-z-index:0 !important;
+@agnPrimaryColor:#b09357 !important;
+@top-z-index:9999 !important;
+
+/***********************************
+             MIXINS
+***********************************/
+
+.CenterUp{
+	margin:0 auto;	
+}
+
+.Divider{
+	background-color:rgb(223, 223, 223);
+	float:left;
+	height:1px;
+	margin:20px 0px;
+	width:548px;
+}
+/*
+.SetFont(@thickness,@fontSize){
+	font:@thickness @fontSize 'Source Sans Pro', sans-serif;
+}
+*/
+/***********************************
+             STYLES
+***********************************/
+body{
+	background-image:url(../images/shutterstock_image_of_hi_tech_data_center-edit.jpg);
+}
+
+#outter-wrapper{
+	background-color:black;
+	.CenterUp;
+	height:100%;
+	opacity:0.8;
+	width:76%;
+}
+
+	#main-wrapper{
+		.CenterUp;
+		height:100%;
+		opacity:82%;
+		width:76%;	
+	}
+	
+		#main-wrapper > img,
+		#main-wrapper > h2,
+		#main-wrapper > h4,
+		#main-wrapper > p
+		{
+			.CenterUp;
+			color:@agnPrimaryColor;
+			float:left;
+			text-align:center;
+			width:100%;
+		}
+		
+		#main-wrapper > img
+		{
+			float:left;
+			margin-top:20px;	
+		}
+		
+		#main-wrapper > h2,
+		#main-wrapper > h4
+		{
+			color:white;	
+			float:left;
+			margin-top:8px;
+		}
+		
+		#main-wrapper > p
+		{
+			margin-top:8px;	
+		}
+		
+		
+		#main-wrapper > p > span
+		{
+			color:white;
+		}
