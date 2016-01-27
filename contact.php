@@ -16,8 +16,6 @@
         <div id="page-title">
         	<h1>Contact</h1>
         </div>
-        <form>
-        </form>
     </div>
 </body>
 </html>
