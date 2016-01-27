@@ -6,7 +6,7 @@
              CONSTANTS
 ***********************************/
 @bottom-z-index:0 !important;
-@agnPrimaryColor:#b09357 !important;
+@agnPrimaryColor:#dc9d34 !important;
 @top-z-index:9999 !important;
 
 /***********************************
@@ -24,66 +24,54 @@
 	margin:20px 0px;
 	width:548px;
 }
-/*
+
 .SetFont(@thickness,@fontSize){
-	font:@thickness @fontSize 'Source Sans Pro', sans-serif;
+	font:@thickness @fontSize "Helvetica Neue", Helvetica, Gotham, Arial, sans-serif;
 }
-*/
+
 /***********************************
              STYLES
 ***********************************/
-body{
-	background-image:url(../images/shutterstock_image_of_hi_tech_data_center-edit.jpg);
-}
 
-#outter-wrapper{
-	background-color:black;
+#outer-wrapper{
 	.CenterUp;
-	height:100%;
-	opacity:0.8;
-	width:76%;
+	width:100%;	
 }
 
-	#main-wrapper{
-		.CenterUp;
-		height:100%;
-		opacity:82%;
-		width:76%;	
+	#logo{
+		float:left;
+		margin:11px 0 0 157px;	
 	}
 	
-		#main-wrapper > img,
-		#main-wrapper > h2,
-		#main-wrapper > h4,
-		#main-wrapper > p
-		{
-			.CenterUp;
-			color:@agnPrimaryColor;
-			float:left;
-			text-align:center;
-			width:100%;
-		}
-		
-		#main-wrapper > img
-		{
-			float:left;
-			margin-top:20px;	
-		}
-		
-		#main-wrapper > h2,
-		#main-wrapper > h4
-		{
-			color:white;	
-			float:left;
-			margin-top:8px;
-		}
-		
-		#main-wrapper > p
-		{
-			margin-top:8px;	
-		}
-		
-		
-		#main-wrapper > p > span
-		{
+	nav{
+		float:right;
+		height:34px;
+		margin:47px 131px 0 0;
+	}
+	
+	nav a{
+		color:@agnPrimaryColor;
+		display:block;
+		float:left;
+		.SetFont(normal,15px);
+		height:34px;
+		margin-left:36px;	
+	}
+	
+/***********************************
+             SUB PAGES
+***********************************/
+	
+	#page-title{
+		background-color:@agnPrimaryColor;
+		float:left;
+		height:80px;
+		width:100%;
+	}
+	
+		#page-title h1{
 			color:white;
+			margin:23px 0 0 157px;
+			.SetFont(400,27px);
 		}
+	
