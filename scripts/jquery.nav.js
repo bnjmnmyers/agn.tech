@@ -17,8 +17,8 @@ $(document).ready(function(){
 		case devDir+'/contact.php':
 			$('#navContact').addClass('active');
 			break;
-		case devDir+'/dates.php':
-			$('#navService').addClass('active');
+		case devDir+'/services.php':
+			$('#navServices').addClass('active');
 			break;
 		default:
 			$('#navHome').addClass('active');	
