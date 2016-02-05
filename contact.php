@@ -16,6 +16,16 @@
         <div id="page-title">
         	<h1>Contact</h1>
         </div>
+        <div id="content-wrapper">
+        	<form method="post">
+            	<input type="text" name="name" />
+                <input type="text" name="phone" />
+                <input type="text" name="email" />
+                <input type="text" name="company" />
+                <input type="text" name="request" />
+                <input type="submit" name="submit" />
+            </form>
+        </div>
     </div>
 </body>
 </html>
