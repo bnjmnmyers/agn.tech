@@ -16,6 +16,9 @@
         <div id="slider">
         	<img src="images/hacked.png" width="1366" alt="Network Security Image" title="Don't get hacked! Get Alchemy Global Networks, the gold standard in network security." />
         </div>
+        <div id="content-wrapper">
+        </div>
+        <?php include('includes/footer.php') ?>
     </div>
 </body>
 </html>

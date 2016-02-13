@@ -26,6 +26,7 @@
                 <input type="submit" name="submit" />
             </form>
         </div>
+        <?php include('includes/footer.php') ?>
     </div>
 </body>
 </html>

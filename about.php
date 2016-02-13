@@ -16,6 +16,9 @@
         <div id="page-title">
         	<h1>About</h1>
         </div>
+        <div id="content-wrapper">
+        </div>
+        <?php include('includes/footer.php') ?>
     </div>
 </body>
 </html>
