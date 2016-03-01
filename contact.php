@@ -17,8 +17,9 @@
         	<h1>Contact</h1>
         </div>
         <div id="content-wrapper">
-        	<form method="post">
-            	<input type="text" name="name" />
+        	<form method="post" action="includes4>
+            	<input type="text" name="first-name" />
+            	<input type="text" name="last-name" />
                 <input type="text" name="phone" />
                 <input type="text" name="email" />
                 <input type="text" name="company" />

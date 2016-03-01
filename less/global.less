@@ -1,6 +1,7 @@
 /* CSS Document */
 @import url(reset.css);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
 
 /***********************************
              CONSTANTS
@@ -26,7 +27,7 @@
 }
 
 .SetFont(@thickness,@fontSize){
-	font:@thickness @fontSize "Helvetica Neue", Helvetica, Gotham, Arial, sans-serif;
+	font:@thickness @fontSize 'Bitter', serif;
 }
 
 /***********************************
@@ -74,8 +75,8 @@ a, a:hover{
 	}
 	
 	#footer{
-		background-color:black;
-		height:250px;
+		background-color:#363636;
+		height:180px;
 	}
 	
 	#footer-nav{
