@@ -37,6 +37,18 @@ a, a:hover{
 	text-decoration:none;	
 }
 
+h2, h3, h4, h5{
+	color:@agnPrimaryColor;
+}
+
+h2{
+	.SetFont(400, 24px);
+}
+
+h3{
+	.SetFont(400, 20px);	
+}
+
 #outer-wrapper{
 	.CenterUp;
 	width:100%;	
@@ -70,9 +82,15 @@ a, a:hover{
 	}
 	
 	#content-wrapper{
-		height:300px;
+		min-height:300px;
+		padding:0 157px;
 		width:100%;	
 	}
+	
+		#content-wrapper p{
+			line-height: 24px;
+    		margin-bottom: 20px;
+		}
 	
 	#footer{
 		background-color:#363636;
