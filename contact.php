@@ -17,13 +17,29 @@
         	<h1>Contact</h1>
         </div>
         <div id="content-wrapper">
-        	<form method="post" action="includes4>
-            	<input type="text" name="first-name" />
-            	<input type="text" name="last-name" />
-                <input type="text" name="phone" />
-                <input type="text" name="email" />
-                <input type="text" name="company" />
-                <input type="text" name="request" />
+        	<form method="post" action="">
+            	<div class="col-lg-6">
+                	<div class="input-row">
+                    	<input type="text" name="first-name" placeholder="First Name" />
+                    </div>
+                	<div class="input-row">
+                    	<input type="text" name="last-name" placeholder="Last Name" />
+                    </div>
+                	<div class="input-row">
+                    	<input type="text" name="phone" placeholder="Phone" />
+                    </div>
+                	<div class="input-row">
+                    	<input type="text" name="email" placeholder="Email" />
+                    </div>
+                	<div class="input-row">
+                    	<input type="text" name="company" placeholder="Company Name" />
+                    </div>
+                </div>
+            	<div class="col-lg-6">
+                	<div class="input-row textarea-container">
+                		<textarea name="request" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
                 <input class="send" type="submit" name="Send" />
             </form>
         </div>
