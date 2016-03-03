@@ -30,12 +30,12 @@
 	width:548px;
 }
 
-.SetFont(@thickness,@fontSize){
-	font:@thickness @fontSize 'Bitter', serif;
+.SetPrimaryFont(@thickness,@fontSize){
+	font:@thickness @fontSize 'Gotham A','Gotham B',sans-serif;
 }
 
-.SetContainerFont(@thickness,@fontSize){
-	font:@thickness @fontSize 'Gotham A','Gotham B',sans-serif;
+.SetSecondaryFont(@thickness,@fontSize){
+	font:@thickness @fontSize 'Bitter', serif;
 }
 
 /***********************************
@@ -50,11 +50,11 @@ h2, h3, h4, h5{
 }
 
 h2{
-	.SetFont(400, 24px);
+	.SetSecondaryFont(400, 24px);
 }
 
 h3{
-	.SetFont(400, 20px);	
+	.SetSecondaryFont(400, 20px);	
 }
 
 #outer-wrapper{
@@ -84,7 +84,7 @@ h3{
 		color:@agnPrimaryColor;
 		display:block;
 		float:left;
-		.SetFont(normal,15px);
+		.SetPrimaryFont(normal,15px);
 		height:34px;
 		margin-left:36px;	
 	}
@@ -129,6 +129,6 @@ h3{
 		#page-title h1{
 			color:#E0E0E0;
 			margin:23px 0 0 157px;
-			.SetFont(400,27px);
+			.SetPrimaryFont(600,27px);
 		}
 	

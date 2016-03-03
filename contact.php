@@ -24,7 +24,7 @@
                 <input type="text" name="email" />
                 <input type="text" name="company" />
                 <input type="text" name="request" />
-                <input type="submit" name="submit" />
+                <input class="send" type="submit" name="Send" />
             </form>
         </div>
         <?php include('includes/footer.php') ?>
