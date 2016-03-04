@@ -17,6 +17,9 @@
         	<h1>Contact</h1>
         </div>
         <div id="content-wrapper">
+        	<p>Your journey toward a more secure, robust, and functional network begins with a first step. Whether you need a quick answer to your urgent support needs or a long-term staff augmentation, the engineers at Alchemy Global Networks are here to help.</p>
+
+			<p>Complete the form below to learn more and get started. We’ll be in touch promptly with answers to your burning questions and information about the next steps.</p>
         	<form method="post" action="">
             	<div class="col-lg-6">
                 	<div class="input-row">
