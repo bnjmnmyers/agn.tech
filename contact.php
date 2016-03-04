@@ -37,7 +37,7 @@
                 </div>
             	<div class="col-lg-6">
                 	<div class="input-row textarea-container">
-                		<textarea name="request" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your message"></textarea>
+                		<textarea name="request" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message"></textarea>
                     </div>
                 </div>
                 <input class="send" type="submit" name="Send" />
