@@ -5,11 +5,8 @@
 	float:left;
 }
 
-#contact-box{
-	background-color:@agnPrimaryColor;
-}
-
 form{
+	clear:both;
 	margin:20px 0;
 	padding:0;	
 }
@@ -17,6 +14,21 @@ form{
 	.col-lg-6{
 		padding-left:0px !important;	
 	}
+	
+		.google-maps {
+			clear:both;
+			height:234px;
+			position:relative;
+			/*padding-bottom:75%;*/
+		}
+		
+		.google-maps iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100% !important;
+			height:92% !important;
+		}
 	
 		.input-row{
 			border:3px solid @agnPrimaryColor;

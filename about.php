@@ -23,6 +23,8 @@
 
 <p>To be the best, you need to be educated, experienced, and able to adapt to any and every hurdle that might appear along your pathway to success. At Alchemy Global Networks, we’re all those things and more. Our network engineers have decades of combined experience in every corner of internetworking and cybersecurity, with the highest-level certifications across myriad solutions.</p>
 
+<img id="certificate" src="images/about/certificate-icon.svg" height="82" width="100" alt="Certifications are only as meaningful as the people behind them" title="Certificate icon" />
+
 <p>Of course, those certifications are only as meaningful as the people behind them. Luckily, we’ve got the best people in the business. That’s because no one on our team is simply an engineer. We’re jacks-of-all-trades, equally at home fortifying your network against the threat of attacks as we are working with your business to ensure its everyday network needs are met.</p>
 
 <p>Along with holding the highest possible certifications from Cisco, Juniper Networks, and many others, we’re also certified vendors and installers of ForeScout’s advanced network products. We’ve worked with everyone from fledgling enterprises to the biggest players across virtually every vertical.</p> 
