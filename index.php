@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alchemy Global Networks | Home</title>
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-	<div id="outer-wrapper">
+	<div id="container-fluid">
     	<?php include('includes/header.php') ?>
         <section id="showcase">
         	<div id="container">
