@@ -24,7 +24,7 @@
             
                 <p>With unmatched skill, experience, and expertise, our services form the gold standard in enterprise network engineering and cybersecurity. Whether you’re looking to install a new solution, beef up your security, or receive ongoing expert support, we’re with you every step of the way, providing accessible, personal, and absolutely premium network services.</p>	
             </div>
-            <div id="services">
+            <div id="services" class="row">
                 <div class="service-button col-md-2">
                     <img src="images/services/assessment-icon.svg" height="144" width="144" alt="" title="" />
                     <span>Assessment</span>
