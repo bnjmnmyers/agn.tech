@@ -22,33 +22,7 @@
                 <p>Your network is the lifeblood of your organization—you can’t afford to have it compromised, insecure, or ineffective. At Alchemy Global Networks, our focus is always on you and your network: whatever your business needs, we’re here to uncover the underlying issues and provide a workable solution.</p>
     
                 <p>With unmatched skill, experience, and expertise, our services form the gold standard in enterprise network engineering and cybersecurity. Whether you’re looking to install a new solution, beef up your security, or receive ongoing expert support, we’re with you every step of the way, providing accessible, personal, and absolutely premium network services.</p>
-                
-                <div id="services">
-                    <div class="service-button">
-                        <img src="images/services/assessment-icon.svg" height="144" width="144" alt="" title="" />
-                        <span>Assessment</span>
-                    </div>
-                    
-                    <div class="service-button">
-                        <img src="images/services/installation-icon.svg" height="144" width="144" alt="" title="" />
-                        <span>Installation</span>
-                    </div>
-                    
-                    <div class="service-button">
-                        <img src="images/services/support-icon.svg" height="144" width="144" alt="" title="" />
-                        <span>Ongoing Support</span>
-                    </div>
-                    
-                    <div class="service-button">
-                        <img src="images/services/design-icon.svg" height="144" width="144" alt="" title="" />
-                        <span>Design</span>
-                    </div>
-                    
-                    <div class="service-button">
-                        <img src="images/services/staff-icon.svg" height="144" width="144" alt="" title="" />
-                        <span>Staff Augmentation</span>
-                    </div>
-    			</div>
+    
                 <h3>Assessment</h3>
                 
                 <p>Before you can deploy a smart solution, you need to first diagnose the underlying problem. There are no one-size-fits-all answers to enterprise network issues—your network infrastructure, concerns, and business goals are one of a kind. That’s why we begin with an in-depth, comprehensive assessment of your network. We’ll familiarize ourselves with specifics of your environment and your challenges.</p> 
