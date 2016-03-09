@@ -6,6 +6,7 @@
 /***********************************
              CONSTANTS
 ***********************************/
+
 @bottom-z-index:0 !important;
 @agnPrimaryColor:#dc9d34 !important;
 @agnSecondaryColor:#363636 !important;
@@ -19,8 +20,9 @@
 	color:@agnPrimaryColor;	
 }
 
-.CenterUp{
-	margin:0 auto;	
+.CenterUp(@verticalMargin, @width){
+	margin:@verticalMargin auto;	
+	width:@width;
 }
 
 .Divider{
@@ -42,6 +44,7 @@
 /***********************************
              STYLES
 ***********************************/
+
 a, a:hover{
 	text-decoration:none;	
 }
@@ -58,87 +61,13 @@ h3{
 	.SetSecondaryFont(400, 20px);	
 }
 
-#outer-wrapper{
-	.CenterUp;
-	width:100%;	
+@media (min-width: 400px) { 
+	#logo{
+		display:block;
+		.CenterUp(20px, 304px);
+	}
 }
 
-	#header, 
-	#content-wrapper, 
-	#footer{
-		float:left;
-		width:100%;	
-	}
-
-	#logo{
-		float:left;
-		margin:11px 0 0 157px;	
-	}
-	
-	nav{
-		float:right;
-		height:34px;
-		margin:47px 131px 0 0;
-	}
-	
-	nav a{
-		color:@agnPrimaryColor;
-		display:block;
-		float:left;
-		.SetPrimaryFont(normal,15px);
-		height:34px;
-		margin-left:36px;	
-	}
-	
-	#content-wrapper{
-		min-height:300px;
-		width:100%;	
-	}
-		
-		#content{
-			margin-top:20px;	
-		}
-		
-			#content{
-				padding-left:157px;
-				padding-right:157px;
-			}
-	
-				#contant h2,
-				#content p{
-					line-height:24px;
-					margin-bottom:20px;
-				}
-	
-	#footer{
-		background-color:@agnSecondaryColor;
-		height:180px;
-	}
-	
-	#footer-nav{
-		margin:0 auto;
-		width:50%;
-	}
-	
-		#footer-nav a{
-			color: white;
-			float: left;	
-		}
-	
 /***********************************
              SUB PAGES
 ***********************************/
-	
-	#page-title{
-		background-color:@agnSecondaryColor;
-		float:left;
-		height:80px;
-		width:100%;
-	}
-	
-		#page-title h1{
-			color:#E0E0E0;
-			margin:26px 0 0 157px;
-			.SetPrimaryFont(600,27px);
-		}
-	
