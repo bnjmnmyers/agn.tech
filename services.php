@@ -88,5 +88,25 @@
         </div>
         <?php include('includes/footer.php') ?>
     </div>
+    <script type="text/javascript" language="javascript">
+		$(document).ready(function(){
+			$('.service-button img').bind('click',function(){
+				if($('.service-button img').hasClass('active')){
+					activeImgSrc = $('img.active').attr('src');
+					nonActiveSrc = activeImgSrc.replace(/(\-active\.\w{3,4})$/i,'');
+					console.log(nonActiveSrc);
+					$('img.active').attr('src',nonActiveSrc+'.svg');
+					$('img.active').removeClass('active');
+				}
+				$(this).addClass('active');
+				imgSource = $(this).attr('src');
+				imgActive = imgSource.replace(/(\.\w{3,4})$/i, '-active$1');
+				$(this).attr('src',imgActive);
+				var buttonName = $(this).parent().attr('id');
+				$('.service').removeClass('active');
+				$('#'+buttonName+'-block').addClass('active');
+			});
+		});
+	</script>
 </body>
 </html>
