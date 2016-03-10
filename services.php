@@ -93,19 +93,33 @@
     <script type="text/javascript" language="javascript">
 		$(document).ready(function(){
 			$('.service-button img').bind('click',function(){
+				// Check to see if an image is already active
 				if($('.service-button img').hasClass('active')){
+					// If there is an active image gets it's image source
 					activeImgSrc = $('img.active').attr('src');
+					// Replace the -active in the image source with nothing
 					nonActiveSrc = activeImgSrc.replace(/(\-active\.\w{3,4})$/i,'');
-					console.log(nonActiveSrc);
+					// Change the currently active image with a non-active image
 					$('img.active').attr('src',nonActiveSrc+'.svg');
+					// Remove the active class from the currently active image
 					$('img.active').removeClass('active');
 				}
+				// Add active class to the clicked button
 				$(this).addClass('active');
+				// Get the current image source of the image that was clicked
 				imgSource = $(this).attr('src');
+				// Append -active to the end of the image source
 				imgActive = imgSource.replace(/(\.\w{3,4})$/i, '-active$1');
+				// Change the image of the button that was clicked to the active image
 				$(this).attr('src',imgActive);
-				var buttonName = $(this).parent().attr('id');
+				// Remove active class from the currently displayed service
 				$('.service').removeClass('active');
+				// Get the id of the button that was pressed
+				var buttonName = $(this).parent().attr('id');
+				/* Use the id of the button pressed to build
+				   the id of the text block that needs to be
+				   displayed and then add the active class to
+				   that text block */
 				$('#'+buttonName+'-block').addClass('active');
 			});
 		});
