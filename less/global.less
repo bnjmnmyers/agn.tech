@@ -61,13 +61,101 @@ h3{
 	.SetSecondaryFont(400, 20px);	
 }
 
-@media (min-width: 400px) { 
-	#logo{
-		display:block;
-		.CenterUp(20px, 304px);
-	}
+#outer-wrapper{
+	.CenterUp(0px, 100%);
 }
 
+	#header, 
+	#content-wrapper, 
+	#footer{
+		float:left;
+		width:100%;	
+	}
+
+ 	#logo{
+		float:left;
+		margin:11px 0 0 157px;	
+	}
+	
+	nav{
+		float:right;
+		height:34px;
+		margin:47px 131px 0 0;
+	}
+	
+	nav a{
+		color:@agnPrimaryColor;
+ 		display:block;
+		float:left;
+		height:34px;
+		margin-left:36px;
+		.SetPrimaryFont(normal,15px);
+ 	}
+	
+	#content-wrapper{
+		min-height:300px;
+		width:100%;	
+	}
+		
+		#content{
+			margin-top:20px;	
+		}
+		
+			#content{
+				padding-left:157px;
+				padding-right:157px;
+			}
+	
+				#contant h2,
+				#content p{
+					line-height:24px;
+					margin-bottom:20px;
+				}
+	
+	#footer{
+		background-color:@agnSecondaryColor;
+		height:180px;
+	}
+	
+	#footer-nav{
+		margin:0 auto;
+		width:50%;
+	}
+	
+		#footer-nav a{
+			color: white;
+			float: left;	
+		}
+
 /***********************************
-             SUB PAGES
+              SUB PAGES
 ***********************************/
+	
+	#page-title{
+		background-color:@agnSecondaryColor;
+		float:left;
+		height:80px;
+		width:100%;
+	}
+	
+		#page-title h1{
+			color:#E0E0E0;
+			margin:26px 0 0 157px;
+			.SetPrimaryFont(600,27px);
+		}
+
+/***********************************
+             UTILITIES
+***********************************/
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    width: 20%;
+}

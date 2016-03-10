@@ -4,19 +4,33 @@
 #what-we-do{
 	float:left;	
 }
-.services{
-	float:left;	
+
+#services{
+	float:left !important;
+	width:100%;
 }
 	
 	.service{
+		display:none;
 		float:left;	
 	}
-		.service-button img{
-			margin:0 0 18px 40px;
-			display:block;
+	
+	.service.active{
+		display:block;	
+	}
+	
+		.service-button{
+			cursor:pointer;	
 		}
 		
-		.service-button span{
-			display:block;
-			text-align:center;	
-		}
+			.service-button img{
+				margin:0 auto 20px auto;
+				display:block;
+			}
+			
+			.service-button span{
+				color:@agnSecondaryColor;
+				display:block;
+				text-align:center;
+				.SetSecondaryFont(600, 21px);	
+			}
