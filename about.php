@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alchemy Global Networks | Home</title>
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -11,13 +12,12 @@
 </head>
 
 <body>
-	<div id="outer-wrapper">
+	<div class="container-fluid">
     	<?php include('includes/header.php') ?>
-        <div id="page-title">
+        <div id="page-title" class="row">
         	<h1>About</h1>
         </div>
-        <div id="content-wrapper">
-        	<div id="content">
+        <div id="content-wrapper" class="row">
             <img id="about-image" src="images/about/about.jpg" width="300" />
             <h2>About Alchemy Global Networks</h2>
 
@@ -33,7 +33,6 @@
 
 <a href="contact.php">Contact Us to Learn More & Get Started</a>
 
-            </div>
         </div>
         <?php include('includes/footer.php') ?>
     </div>

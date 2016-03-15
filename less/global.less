@@ -1,6 +1,6 @@
 /* CSS Document */
 @import url(reset.css);
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
 
 /***********************************
@@ -61,72 +61,82 @@ h3{
 	.SetSecondaryFont(400, 20px);	
 }
 
-#outer-wrapper{
-	.CenterUp(0px, 100%);
+p{
+	line-height:22px;	
 }
 
-	#header, 
-	#content-wrapper, 
-	#footer{
-		float:left;
-		width:100%;	
+#header{
+	margin-top:10px;	
+}
+
+	#logo-container{
+		margin-bottom:10px;	
 	}
 
- 	#logo{
-		float:left;
-		margin:11px 0 0 157px;	
+	#logo-link{
+	    display:block;
+		margin:0 auto;
+		width:304px;	
 	}
 	
-	nav{
-		float:right;
-		height:34px;
-		margin:47px 131px 0 0;
+	#nav-container{
+		padding-top:34px;
 	}
 	
-	nav a{
-		color:@agnPrimaryColor;
- 		display:block;
-		float:left;
-		height:34px;
-		margin-left:36px;
-		.SetPrimaryFont(normal,15px);
- 	}
-	
-	#content-wrapper{
-		min-height:300px;
-		width:100%;	
-	}
-		
-		#content{
-			margin-top:20px;	
+		nav{
+			height:34px;
+			margin:3	4px 0 0 0;
 		}
 		
-			#content{
-				padding-left:157px;
-				padding-right:157px;
+			nav a{
+				color:@agnPrimaryColor;
+				display:block;
+				padding-bottom:11px;
+				text-align:center;
+				.SetPrimaryFont(normal,15px);
 			}
 	
-				#contant h2,
-				#content p{
-					line-height:24px;
-					margin-bottom:20px;
-				}
+#content-wrapper{
+	min-height:300px;
+	padding:20px;
+}
+
+@media (min-width: 992px) {
+	#content-wrapper{
+		padding:20px 157px;
+	}	
+}
 	
-	#footer{
-		background-color:@agnSecondaryColor;
-		margin-top:20px;
-		height:180px;
+	#content{
+		margin-top:20px;	
 	}
 	
-	#footer-nav{
-		margin:0 auto;
-		width:50%;
-	}
-	
-		#footer-nav a{
-			color: white;
-			float: left;	
+		#content{
+			padding:0px 20px;
 		}
+
+			#contant h2,
+			#content p{
+				line-height:24px;
+				margin-bottom:20px;
+			}
+
+#footer{
+	background-color:@agnSecondaryColor;
+	margin-top:20px;
+	height:180px;
+}
+
+	#footer-nav{
+	}
+	
+		#footer-nav div{
+			text-align:center;
+		}
+		
+			#footer-nav div a{
+				color:white;	
+			}
 
 /***********************************
               SUB PAGES
@@ -134,29 +144,21 @@ h3{
 	
 	#page-title{
 		background-color:@agnSecondaryColor;
-		float:left;
 		height:80px;
-		width:100%;
 	}
 	
 		#page-title h1{
 			color:#E0E0E0;
-			margin:26px 0 0 157px;
+			margin:26px 0 0 24px;
 			.SetPrimaryFont(600,27px);
+		}
+		
+		@media (min-width: 992px) {
+			#page-title h1{
+				margin-left:157px;	
+			}
 		}
 
 /***********************************
              UTILITIES
 ***********************************/
-
-.col-xs-15,
-.col-sm-15,
-.col-md-15,
-.col-lg-15 {
-    float: left;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-    position: relative;
-    width: 20%;
-}
