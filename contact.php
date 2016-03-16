@@ -93,7 +93,11 @@
                 }
                 else
                 {
-            ?>		<span class="confirm">Your request has been successfully submitted.</span>	
+					
+				?>	<div class="col-md-20 row">
+						<h2 id="thank-you" class="col-md-20">Thank You!</h2>	
+						<span class="confirm" class="col-md-20">Your request has been successfully submitted.</span>	
+					</div>
             <?php 
                 }
             ?>
