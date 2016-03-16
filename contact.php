@@ -52,7 +52,7 @@
             </div>
             <div id="contact-box" class="col-md-10">
                 <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.54381856306!2d-83.3949088!3d36.1760251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885b918dcf36908f%3A0x852bf9bbe99ba7e0!2s6161+W+Andrew+Johnson+Hwy%2C+Talbott%2C+TN+37877!5e0!3m2!1sen!2sus!4v1457224428662" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.6215749889934!2d-83.39675594952669!3d36.17576231020149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885b918e86df42b7%3A0xc7e48531e5f013cd!2s6057+W+Andrew+Johnson+Hwy+%232%2C+Talbott%2C+TN+37877!5e0!3m2!1sen!2sus!4v1458168431068" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
             <?php
