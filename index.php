@@ -14,7 +14,7 @@
 <body>
 	<div class="container-fluid">
     	<?php include('includes/header.php') ?>
-        <div class="row">
+        <div id="showcase-container" class="row">
             <section id="showcase" class="col-lg-20">
                 <div id="container" class="col-log-20">
                     <h1>Alchemy Global Networks</h1>

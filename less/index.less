@@ -1,38 +1,57 @@
 /* CSS Document */
 @import url(global.less);
 
-#showcase{
-	background:url(../images/index/hacked.png)center center/cover no-repeat;
-	padding:20px 0;
+#showcase-container{
+	position:relative;
+    top:146px;	
 }
-	
-		#container h1,
-		#container h2,
-		#container p{
-			color:white;
-			text-align:center;
-			text-transform:uppercase
-		}
+
+@media (min-width: 768px){
+	#showcase-container{
+		top:78px;	
+	}
+}
+	#showcase{
+		background:url(../images/index/hacked.png)center center/cover no-repeat;
+		padding:20px 0;
+	}
 		
-		#container h1{
-			margin-top:60px;
-			.SetPrimaryFont(800, 68px);
-		}
-		
-		#container h2{
-			margin-top:10px;
-			.SetPrimaryFont(600, 40px);
-		}
-		
-		#container p{
-			color:white;
-			margin-top:20px;
-			.SetPrimaryFont(400, 26px);
-		}
+			#container h1,
+			#container h2,
+			#container p{
+				color:white;
+				text-align:center;
+				text-transform:uppercase
+			}
+			
+			#container h1{
+				margin-top:60px;
+				.SetPrimaryFont(800, 68px);
+			}
+			
+			#container h2{
+				margin-top:10px;
+				.SetPrimaryFont(600, 40px);
+			}
+			
+			#container p{
+				color:white;
+				margin-top:20px;
+				padding:0 20px;
+				.SetPrimaryFont(400, 26px);
+			}
 		
 #content-wrapper
 {
 	padding:0px !important;	
+    position:relative !important;
+	top:78px !important;
+}
+
+@media (min-width: 768px){
+	#content-wrapper{
+		top:146px;	
+	}
 }
 		
 			#content-wrapper div h3{

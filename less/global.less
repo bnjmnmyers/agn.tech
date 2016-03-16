@@ -66,7 +66,13 @@ p{
 }
 
 #header{
-	margin-top:10px;	
+    background-color:white;
+    display:block;
+	padding-top:10px;
+	position:fixed;
+    top:0;
+    width:100%;
+    z-index:9999;
 }
 
 	#logo-container{
@@ -98,12 +104,15 @@ p{
 	
 #content-wrapper{
 	min-height:300px;
-	padding:20px;
+    position:relative;
+	padding:40px 20px;    
+	top:194px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	#content-wrapper{
-		padding:20px 157px;
+		padding:40px 116px 20px;
+		top:134px;
 	}	
 }
 	
@@ -123,11 +132,20 @@ p{
 
 #footer{
 	background-color:@agnSecondaryColor;
-	margin-top:20px;
 	height:180px;
+	margin-top:20px;
+	position:relative;
+	top:150px;
+}
+
+@media (min-width){
+	#footer{
+		top:110px;	
+	}
 }
 
 	#footer-nav{
+		margin-top:20px;
 	}
 	
 		#footer-nav div{
@@ -145,6 +163,16 @@ p{
 	#page-title{
 		background-color:@agnSecondaryColor;
 		height:80px;
+		position:fixed;
+		top:146px;
+		width:100%;
+		z-index:9998;
+	}
+	
+	@media (min-width: 768px){
+		#page-title{
+			top:78px;	
+		}
 	}
 	
 		#page-title h1{
@@ -155,10 +183,13 @@ p{
 		
 		@media (min-width: 992px) {
 			#page-title h1{
-				margin-left:157px;	
+				margin-left:116px;
 			}
 		}
 
 /***********************************
              UTILITIES
 ***********************************/
+.row{
+	overflow:hidden;	
+}
