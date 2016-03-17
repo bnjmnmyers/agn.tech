@@ -3,13 +3,17 @@ $(document).ready(function(){
 	var inTesting = true;
 	var pathname = window.location.pathname;
 	var devDir = '';
-	console.log(pathname);
+	var pull = $('#pull');
+	var menu = $('#nav');
+	var menuHeight = menu.height();
+	
 	if(inTesting){
 		devDir = '/dev';	
 	}
 	else{
 		devDir = '';	
 	}
+	
 	switch(pathname){
 		case devDir+'/about.php':
 			$('#navAbout').addClass('active');
@@ -41,5 +45,10 @@ $(document).ready(function(){
 				'border-bottom':'none'
 			});
 		}
+	});
+	
+	$(pull).on('click', function(e){
+		e.preventDefault();
+		menu.slideToggle();
 	});
 });

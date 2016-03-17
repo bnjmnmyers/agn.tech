@@ -85,22 +85,90 @@ p{
 		width:304px;	
 	}
 	
-	#nav-container{
-		padding-top:34px;
-	}
-	
-		nav{
-			height:34px;
-			margin:3	4px 0 0 0;
-		}
-		
-			nav a{
-				color:@agnPrimaryColor;
-				display:block;
-				padding-bottom:11px;
-				text-align:center;
-				.SetPrimaryFont(normal,15px);
+	#logo-container{
+				margin-bottom:0px;	
 			}
+			
+			#nav-container{
+				padding:6px 0px 10px;
+			}
+			
+				#nav{
+					display:none;
+					height:auto;
+				}
+					
+					#nav li{
+						background-color:@agnPrimaryColor;
+						height:40px;
+						padding:20px 40px 30px;
+					}
+					
+						#nav li a,
+						#nav li a.active,
+						#nav li a:hover{
+							border:none;	
+							color:white !important;
+							display:block;
+							text-align:left; 
+						}
+						
+						#nav li a:hover{
+							text-decoration:underline !important;	
+						}
+				
+				#nav-container a#pull{
+					background:url('../images/menu.svg') no-repeat;
+					display:block;
+					height:24px;
+					left:50%;
+					margin-top:10px;
+					position:relative;
+					width:100%;
+				}
+				
+				#nav-conatiner #pull:after{
+					background:url('../images/menu.svg') no-repeat;
+					content:"";
+					display:block;
+					height:40px;
+					position:absolute;
+					right:15px;
+					top:6px;
+					width:30px;
+				}
+	
+		@media screen and (min-width: 768px){
+			#nav-container{
+				padding:0px;
+			}
+			
+				#nav-container a#pull{
+						display:none;	
+					}
+					
+						#nav{
+							display:block;
+							height:54px;
+							margin:14px 0px 0px !important;
+						}
+						
+							#nav li{
+								background-color:white;
+								padding-left:10px;
+								padding-right:10px;
+							}
+						
+								#nav li a,
+								#nav li a.active,
+								#nav li a:hover{
+									color:@agnPrimaryColor !important;
+									padding-bottom:11px;
+									text-align:center !important;
+									text-decoration:none !important;
+									.SetPrimaryFont(normal,15px);
+								}
+		}
 	
 #content-wrapper{
 	min-height:300px;
@@ -164,7 +232,7 @@ p{
 		background-color:@agnSecondaryColor;
 		height:80px;
 		position:fixed;
-		top:146px;
+		top:118px;
 		width:100%;
 		z-index:9998;
 	}
