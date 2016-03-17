@@ -1,1 +1,3 @@
 *.xml
+includes/config.php
+includes/environment.php
