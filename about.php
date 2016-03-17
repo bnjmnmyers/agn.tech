@@ -36,5 +36,11 @@
         </div>
         <?php include('includes/footer.php') ?>
     </div>
+    <?php 
+		include 'includes/environment.php';
+		if(ENVIRONMENT != "DEV"){
+			include 'includes/analyticstracking.php'; 
+		}
+	?>
 </body>
 </html>
